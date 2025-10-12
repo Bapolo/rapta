@@ -10,7 +10,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar />
-      <main className="min-h-[20em] relative">{children}</main>
+      <main className="min-h-[20em]">{children}</main>
       <Footer />
     </>
   );
