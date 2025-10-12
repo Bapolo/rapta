@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Open; /* set name */
+  src: url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* url of the font */
+}
+
+* {
+  font-family: "Open", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
