@@ -23,20 +23,28 @@ export default function Navbar({ menuActivo, handleMenu }: MenuProps) {
             <FaBars className="text-3xl" />
           )}
         </p>
-        {menuActivo ? (
-          <ul className={clsx('bg-[#F1F5F9]  flex-col gap-3.5 left-0 top-20 absolute w-full justify-center items-center border-t border-zinc-500 transition duration-500 ease-in-out',
-            menuActivo ? 'opacity-100 flex':'hidden opacity-0'
-          )}>
-            <li className="p-2">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="p-2">
-              <Link href="/sobre">Sobre</Link>
-            </li>
-          </ul>
-        ) : (
-          ""
-        )}
+
+        <ul
+          className={clsx(
+            "absolute left-0 top-20 w-full flex-col gap-3.5 justify-center items-center border-t border-zinc-500 bg-[#F1F5F9] transition-all duration-500 ease-in-out",
+            menuActivo
+              ? "opacity-100 translate-y-0 pointer-events-auto flex"
+              : "opacity-0 pointer-events-none"
+          )}
+        >
+          {menuActivo ? (
+            <>
+              <li className="p-2">
+                <Link href="/">Home</Link>
+              </li>
+              <li className="p-2">
+                <Link href="/sobre">Sobre</Link>
+              </li>
+            </>
+          ) : (
+            ""
+          )}
+        </ul>
       </div>
     </nav>
   );
