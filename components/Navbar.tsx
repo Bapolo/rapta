@@ -1,14 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import clsx from "clsx";
 
 interface MenuProps {
   menuActivo: boolean;
-  handleMenu: any;
+  handleMenu: React.MouseEventHandler<HTMLParagraphElement>;
 }
 
 export default function Navbar({ menuActivo, handleMenu }: MenuProps) {
