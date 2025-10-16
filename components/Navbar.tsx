@@ -30,7 +30,7 @@ export default function Navbar({
 
         <ul
           className={clsx(
-            "absolute left-0 top-20 w-full flex-col gap-3.5 justify-center items-center border-t border-zinc-500 bg-[#F1F5F9] transition-all duration-500 ease-in-out md:flex",
+            "absolute left-0 top-20 w-full flex-col justify-center items-center border-t border-b border-zinc-300 bg-[#F1F5F9] transition-all duration-500 ease-in-out md:flex",
             `ms:${menuActivo}`
               ? "opacity-100 translate-y-0 pointer-events-auto flex"
               : "opacity-0 pointer-events-none",
@@ -39,10 +39,10 @@ export default function Navbar({
         >
           {menuActivo ? (
             <>
-              <li className="p-2">
+              <li className="p-2 border-b border-zinc-300 w-full text-center">
                 <Link href="/">Home</Link>
               </li>
-              <li className="p-2">
+              <li className="p-2 w-full text-center">
                 <Link href="/sobre">Sobre</Link>
               </li>
             </>
