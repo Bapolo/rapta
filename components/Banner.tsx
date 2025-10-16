@@ -21,7 +21,7 @@ export default function Banner() {
         <button className="flex justify-around font-bold items-center bg-amber-400 md:hover:bg-amber-300 transition p-2 text-white w-40 cursor-pointer border border-zinc-300 rounded-md">
           Saber mais <FaArrowRight />
         </button>
-        <button className="flex justify-around font-bold items-center bg-[#F5F5FA]  p-2 text-amber-400 w-40 cursor-pointer border border-zinc-300 rounded-md">
+        <button className="flex justify-around font-bold items-center bg-[#F5F5FA]  p-2 text-amber-400 w-40 cursor-pointer border border-zinc-300 rounded-md md:hover:bg-zinc-200 transition">
           {" "}
           <FaRoute /> Ver destinos
         </button>
