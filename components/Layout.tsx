@@ -22,7 +22,7 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <>
-      <Navbar menuActivo={menuActivo} handleMenu={handleMenu} setMenuActivo={setMenuActivo}/>
+      <Navbar menuActivo={menuActivo} handleMenu={handleMenu} setMenuActivo={setMenuActivo} />
       <main className="min-h-[20em]" onClick={() => setMenuActivo(false)}>{children}</main>
       <Footer setMenuActivo={setMenuActivo}/>
     </>

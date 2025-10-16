@@ -14,6 +14,7 @@ interface MenuProps {
 export default function Navbar({
   menuActivo,
   handleMenu,
+  setMenuActivo,
 }: MenuProps) {
 
   return (
@@ -40,10 +41,10 @@ export default function Navbar({
           {menuActivo ? (
             <>
               <li className="p-2 border-b border-zinc-300 w-full text-center">
-                <Link href="/">Home</Link>
+                <Link href="/" onClick={() => setMenuActivo(false)}>Home</Link>
               </li>
               <li className="p-2 w-full text-center">
-                <Link href="/sobre">Sobre</Link>
+                <Link href="/sobre" onClick={() => setMenuActivo(false)}>Sobre</Link>
               </li>
             </>
           ) : (
