@@ -1,4 +1,7 @@
 import Image from "next/image"
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa"
+
+import Link from "next/link"
 
 interface MembrosProps {
     image: string,
@@ -23,6 +26,18 @@ export default function CardMembros(infoMembro: MembrosProps) {
             <p>{infoMembro.description}</p>
             <p>{infoMembro.whatsapp}</p>
             <p>{infoMembro.site}</p>
+
+            <div className="flex gap-4 text-2xl">
+                <a href="https://www.facebook.com" target="_blank">
+                    <FaFacebook />
+                </a>
+                <a href="www.FaLinkedin.com" >
+                    <FaLinkedin />
+                </a>
+                <a href="www.instagram.com" >
+                    <FaInstagram />
+                </a>
+            </div>
         </section>
     )
 }

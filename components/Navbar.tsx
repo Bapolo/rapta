@@ -8,9 +8,14 @@ import clsx from "clsx";
 interface MenuProps {
   menuActivo: boolean;
   handleMenu: React.MouseEventHandler<HTMLParagraphElement>;
+  setMenuActivo: React.Dispatch<boolean>;
 }
 
-export default function Navbar({ menuActivo, handleMenu }: MenuProps) {
+export default function Navbar({
+  menuActivo,
+  handleMenu,
+}: MenuProps) {
+
   return (
     <nav className="bg-[#F1F5F9]  flex justify-between px-4 items-center p-4 transition-all mb-1 h-20 relative">
       <div className="text-4xl">Logo</div>
@@ -25,10 +30,11 @@ export default function Navbar({ menuActivo, handleMenu }: MenuProps) {
 
         <ul
           className={clsx(
-            "absolute left-0 top-20 w-full flex-col gap-3.5 justify-center items-center border-t border-zinc-500 bg-[#F1F5F9] transition-all duration-500 ease-in-out",
-            menuActivo
+            "absolute left-0 top-20 w-full flex-col gap-3.5 justify-center items-center border-t border-zinc-500 bg-[#F1F5F9] transition-all duration-500 ease-in-out md:flex",
+            `ms:${menuActivo}`
               ? "opacity-100 translate-y-0 pointer-events-auto flex"
-              : "opacity-0 pointer-events-none"
+              : "opacity-0 pointer-events-none",
+              
           )}
         >
           {menuActivo ? (
