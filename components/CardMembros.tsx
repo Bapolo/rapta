@@ -29,10 +29,10 @@ export default function CardMembros(infoMembro: MembrosProps) {
                 <a href="https://www.facebook.com" target="_blank">
                     <FaFacebook />
                 </a>
-                <a href="www.FaLinkedin.com" >
+                <a href="https://www.FaLinkedin.com" target="_blank">
                     <FaLinkedin />
                 </a>
-                <a href="www.instagram.com" >
+                <a href="https://www.instagram.com" target="_blank">
                     <FaInstagram />
                 </a>
             </div>
