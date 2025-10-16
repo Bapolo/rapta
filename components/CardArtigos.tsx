@@ -20,7 +20,7 @@ export default function CardArtigo({image}: ImageArtigo) {
             <h3 className="px-4 text-xl">Título do artigo</h3>
             <p className="px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
 
-            <button className="bg-amber-300 mx-4 my-2 py-1 px-5 rounded-md cursor-pointer hover:bg-amber-400 mb-4" onClick={() => redirect('/')}>ler artigo</button>
+            <button className="bg-amber-300 mx-4 my-2 py-1 px-5 rounded-md cursor-pointer hover:bg-amber-400 mb-6" onClick={() => redirect('/')}>ler artigo</button>
         </article>
     )
 }
