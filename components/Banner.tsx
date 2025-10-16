@@ -9,7 +9,7 @@ export default function Banner() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="py-10 text-center text-[#000] mb-4"
+      className="py-5 text-center text-[#000] mb-4"
     >
       <h1 className=" p-4 text-7xl text-amber-400 font-extrabold">RAPTA</h1>
       <p className="mb-16 md:w-2xl text-center mx-auto">
