@@ -6,12 +6,12 @@ import { motion } from "framer-motion";
 
 export default function Artigos() {
   return (
-    <section>
+    <section className="p-4 mt-25 flex">
       <motion.div
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 3 * 0.2, duration: 0.5 }}
-        className="p-4 mt-25 flex flex-col justify-center items-center gap-5"
+        className="flex flex-col justify-center items-center gap-5"
       >
         <h2 className="text-5xl text-center text-gray-700 underline mb-10">
           Artigos
