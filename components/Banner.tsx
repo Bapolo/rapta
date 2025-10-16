@@ -12,7 +12,7 @@ export default function Banner() {
       className="py-10 text-center text-[#000] mb-4"
     >
       <h1 className=" p-4 text-7xl text-amber-400 font-extrabold">RAPTA</h1>
-      <p className="mb-8">
+      <p className="mb-16 md:w-2xl text-center mx-auto">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel,
         praesentium laboriosam maxime accusantium odio voluptatum?
       </p>
