@@ -25,7 +25,7 @@ export default function CardMembros(infoMembro: MembrosProps) {
             <p>{infoMembro.whatsapp}</p>
             <p>{infoMembro.site}</p>
 
-            <div className="flex gap-4 text-2xl">
+            <div className="flex gap-4 text-2xl mb-4">
                 <a href="https://www.facebook.com" target="_blank">
                     <FaFacebook />
                 </a>
