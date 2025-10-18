@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa"
+import Link from "next/link"
 
 interface MembrosProps {
     image: string,
@@ -35,7 +36,7 @@ export default function CardMembros({image, name="sem nome", whatsapp="+24494155
                 </a>
             </div>
 
-            <button className="underline cursor-pointer text-zinc-700 hover:text-black">detalhes</button>
+            <button className="underline cursor-pointer text-zinc-700 hover:text-black"><Link href="/membros/id">detalhes</Link></button>
         </section>
     )
 }
