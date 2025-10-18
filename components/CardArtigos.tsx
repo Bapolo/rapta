@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image"
-import { redirect } from "next/navigation"
+import Link from "next/link"
 
 interface ImageArtigo {
     image: string
@@ -20,7 +20,7 @@ export default function CardArtigo({image}: ImageArtigo) {
             <h3 className="px-4 text-xl">Título do artigo</h3>
             <p className="px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
 
-            <button className="bg-amber-400 mx-4 my-2 py-1 px-5 rounded-md cursor-pointer hover:bg-amber-200 mb-6 transition duration-250 ease-in-out" onClick={() => redirect('/')}>ler artigo</button>
+            <button className="bg-amber-400 mx-4 my-2 py-1 px-5 rounded-md cursor-pointer hover:bg-amber-200 mb-6 transition duration-250 ease-in-out"><Link href="/artigos/id">ler artigo</Link></button>
         </article>
     )
 }

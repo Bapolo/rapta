@@ -39,13 +39,13 @@ export default function Navbar({
               menuActivo ? "flex" : "hidden"
             )}
           >
-            <li className="p-2 border-b border-zinc-300 w-full text-center">
-              <Link href="/" onClick={() => setMenuActivo(false)}>
+            <li className="border-b flex justify-center border-zinc-300 w-full text-center">
+              <Link href="/" className="p-2 w-full" onClick={() => setMenuActivo(false)}>
                 Home
               </Link>
             </li>
-            <li className="p-2 w-full text-center">
-              <Link href="/sobre" onClick={() => setMenuActivo(false)}>
+            <li className="border-b flex justify-center border-zinc-300 w-full text-center">
+              <Link href="/sobre" className="p-2 w-full" onClick={() => setMenuActivo(false)}>
                 Sobre
               </Link>
             </li>
