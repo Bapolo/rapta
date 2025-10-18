@@ -18,7 +18,7 @@ export default function Navbar({
 }: MenuProps) {
   return (
     <nav className="bg-[#F1F5F9]  flex justify-between px-4 items-center p-4 transition-all mb-1 h-20 relative">
-      <div className="text-4xl">Logo</div>
+      <div className="text-4xl"><Link href="/">Logo</Link></div>
 
       <div className="md:hidden">
         <div
